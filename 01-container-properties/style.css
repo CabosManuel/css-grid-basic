@@ -1,0 +1,26 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+  border: 5px solid #5d45d3;
+  background-color: #45d383;
+
+  display: grid;
+  /*grid-template-columns: 100px 200px 300px;*/ /* # de columnas y tamaños */
+  grid-template-rows: 100px 200px; /* # de filas y tamaños */
+  
+  grid-auto-columns: 100px;
+  grid-auto-rows: 150px; /* tamaño para todas la filas */
+  grid-auto-flow: column; /* order como se llenan las filas */
+
+  /* row-gap: 10px; */ /* espacio entre filas */
+  /* column-gap: 30px; */ /* espacio entre columnas */
+  gap: 30px; /* espacio entre filas y columnas */
+
+}
+
+.item {
+  border: 5px solid #82d345;
+  font-size: 4rem;
+}
