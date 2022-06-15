@@ -1,0 +1,31 @@
+html{
+  font-family: sans-serif;
+}
+
+.contenedor {
+  height: 600px;
+  
+  border: 5px solid #5d45d3;
+  background-color: #45d383;
+
+  display: grid;
+  grid-gap: 15px; 
+  grid-template-columns: 150px 150px 150px;
+  grid-auto-rows: 150px;
+
+  /* justify-content: center; */
+  /* align-content: center; */
+  place-content: center;
+  justify-items: end;
+  align-items: end;
+}
+
+.item {
+  border: 5px solid #82d345;
+  font-size: 4rem;
+}
+
+.item-2 {
+  justify-self: start;
+  align-self: baseline;
+}
