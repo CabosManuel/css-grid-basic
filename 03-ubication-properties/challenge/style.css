@@ -1,0 +1,80 @@
+:root {
+  --item-w: 64px;
+  --base: #0db50d;
+  --light: #8fe38f;
+  --shadow: #0f800f;
+  --black: #004500;
+  --border: #dac76b;
+  --bg-frame: #753E23;
+  --shadow-frame: #552f1d;
+}
+
+.container {
+  height: 600px;
+  border: 40px solid var(--border);
+  background: radial-gradient(circle, var(--bg-frame) 70%, var(--shadow-frame) 100%);
+
+  display: grid;
+  grid-template-columns: 
+    var(--item-w) var(--item-w) var(--item-w) var(--item-w)
+    var(--item-w) var(--item-w) var(--item-w) var(--item-w);
+  grid-template-rows: 
+    var(--item-w) var(--item-w) var(--item-w) var(--item-w)
+    var(--item-w) var(--item-w) var(--item-w) var(--item-w);
+  place-content: center;
+}
+
+/* long-shadow-1 */
+.item-13 {
+  grid-area: 2/5/4/6;
+}
+
+/* long-light */
+.item-16 {
+  grid-area: 2/8/4/9;
+}
+
+/* eye 1 */
+.item-18 {
+  grid-area: 3/2/5/4;
+}
+
+/* eye 2 */
+.item-20 {
+  grid-area: 3/6/5/8;
+}
+
+/* nose */
+.item-28 {
+  grid-area: 5/4/6/6
+}
+
+/* long-shadow-2 */
+.item-33 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+
+/* mouth */
+.item-34 {
+  grid-column: 3/7;
+  grid-row: 6/8;
+}
+
+.item {
+  background-color: var(--base);
+}
+
+.item-1, .item-5, .item-16, .item-29, .item-36, .item-37, .item-44 {
+  background-color: var(--light);
+}
+
+.item-2, .item-8, .item-9, .item-13, .item-30, .item-33, .item-39, .item-46 {
+  background-color: var(--shadow);
+}
+
+.item-18, .item-20, .item-28, .item-34, .item-42, .item-45 {
+  background-color: var(--black);
+}
