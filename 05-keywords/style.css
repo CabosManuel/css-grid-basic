@@ -16,13 +16,14 @@
 }
 
 .contenedor-2 {
-  border: 5px solid #e1bee7;
+  /* border: 5px solid #e1bee7; */
   background-color: #fff1ff;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
 .item {
-  border: 5px solid #00bcd4;
+  /* border: 5px solid #00bcd4; */
+  background-color: #00bcd4;
   font-size: 1rem;
 }
